@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (width <=375px) {
+            body {
+                background-color: rgb(216, 150, 150);
+            }
+        }
+
+        @media screen and (width >=375px) and (width <=744px) {
+            body {
+                background-color: rgb(216, 150, 150);
+            }
+        }
+
+        @media screen and (width >=744px) and (width <=1024px) {
+            body {
+                background-color: rgb(216, 150, 150);
+            }
+
+            .items {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .two {
+                flex: 1;
+                flex-flow: column wrap;
+                padding: 10px;
+                gap: 65px;
+            }
+        }
+
+        @media screen and (width >=1024) and (width <=1440px) {
+            body {
+                background-color: rgb(216, 150, 150);
+            }
+        }
+
+        .header {
+            display: flex;
+            flex-flow: column wrap;
+            height: 45px;
+            padding: 15px 25px;
+            gap: 10px;
+            border: 1px solid red;
+        }
+
+        .logo {
+            justify-content: flex-start;
+        }
+
+        nav {
+            display: flex;
+            height: 45px;
+            padding: 10px;
+            gap: 10px;
+            justify-content: flex-end;
+            justify-content: space-evenly;
+        }
+
+        #heading {
+            flex-flow: row wrap;
+            padding: 72px 25px;
+            gap: 56px;
+            border: 1px solid red;
+        }
+
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .two {
+            flex-flow: row wrap;
+            padding: 20px;
+            gap: 10px;
+            border: 1px solid red;
+        }
+
+        #testimonials {
+            flex-flow: row wrap;
+            padding: 25px;
+            gap: 25px;
+            border: 1px solid red;
+        }
+
+        .testi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="placeholder.co/" width="60px" height="50px">
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="heading">
+        <div class="items">
+            <h1>HEADING ONE</h1>
+        </div>
+        <div class="items">
+            <input type="submit" value="CTA">
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="items"><img src="placeholder.co" height="350px" width="307px"></div>
+        <div class="items">
+            <h1>HEADING TWO</h1>
+        </div>
+        <div class="items">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo quaerat, ullam
+                temporibus expedita.
+                Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa quia
+                illo.</p>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="items"><img src="placeholder.co" height="350px" width="307px"></div>
+        <div class="items">
+            <h1>HEADING THREE</h1>
+        </div>
+        <div class="items">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo quaerat, ullam
+                temporibus expedita.
+                Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa quia
+                illo.</p>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="items"><img src="placeholder.co" height="350px" width="307px"></div>
+        <div class="items">
+            <h1>HEADING FOUR</h1>
+        </div>
+        <div class="items">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo quaerat, ullam
+                temporibus expedita.
+                Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa quia
+                illo.</p>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <div class="items">
+            <h1>TESTIMONIALS</h1>
+        </div>
+        <div class="testi">
+            <div><img src="placeholder.co" height="40px" width="40px">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo
+                        quaerat, ullam
+                        temporibus expedita.
+                        Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa
+                        quia
+                        illo.</p>
+                </div>
+            </div>
+            <div><img src="placeholder.co" height="40px" width="40px">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo
+                        quaerat, ullam
+                        temporibus expedita.
+                        Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa
+                        quia
+                        illo.</p>
+                </div>
+            </div>
+            <div><img src="placeholder.co" height="40px" width="40px">
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo
+                        quaerat, ullam
+                        temporibus expedita.
+                        Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa
+                        quia
+                        illo.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="heading">
+            <div class="items">
+                <h1>SUBHEADING</h1>
+            </div>
+            <div class="items">
+                <input type="submit" value="CTA">
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
