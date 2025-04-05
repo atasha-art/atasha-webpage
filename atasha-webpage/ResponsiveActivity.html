@@ -6,92 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media screen and (width <=375px) {
-            body {
-                background-color: rgb(216, 150, 150);
-            }
-        }
+        @media screen and (width <=375px) {}
 
-        @media screen and (width >=375px) and (width <=744px) {
-            body {
-                background-color: rgb(216, 150, 150);
-            }
-        }
+        @media screen and (width >=375px) and (width <=744px) {}
 
-        @media screen and (width >=744px) and (width <=1024px) {
-            body {
-                background-color: rgb(216, 150, 150);
-            }
+        @media screen and (width >=744px) and (width <=1024px) {}
 
-            .items {
-                display: flex;
-                justify-content: center;
-                align-items: center;
 
-            }
+        @media screen and (width >=1024) and (width <=1440px) {}
 
-            .two {
-                flex: 1;
-                flex-flow: column wrap;
-                padding: 10px;
-                gap: 65px;
-            }
-        }
-
-        @media screen and (width >=1024) and (width <=1440px) {
-            body {
-                background-color: rgb(216, 150, 150);
-            }
-        }
+        @media screen and (width >=1440) {}
 
         .header {
             display: flex;
             flex-flow: column wrap;
-            height: 45px;
-            padding: 15px 25px;
+            height: 60px;
+            width: 100%;
+            padding: 15px 20px;
             gap: 10px;
-            border: 1px solid red;
+            background-color: #d17786;
+        }
+        header h2{
+            font-size: 30px;
+            color: #003054;
         }
 
         .logo {
             justify-content: flex-start;
+            font-style: italic;
+            display: flex;
         }
 
         nav {
             display: flex;
             height: 45px;
-            padding: 10px;
+            padding: 28px;
             gap: 10px;
             justify-content: flex-end;
             justify-content: space-evenly;
         }
 
         #heading {
-            flex-flow: row wrap;
-            padding: 72px 25px;
-            gap: 56px;
-            border: 1px solid red;
+            gap: 30px;
+            padding: 50px;
         }
 
         .items {
-            display: flex;
+            text-align: center;
             justify-content: center;
             align-items: center;
+            padding: 10px;
+
+        }
+
+        .items1 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 80px;
+
+
+        }
+
+        .head {
+            font-size: 30px;
+            font-style: bold;
+        }
+
+        .btn {
+            background-color: #79c9bc;
+            border-radius: 10px;
+            height: 50px;
+            width: 120px;
+            border: none;
+            font-size: 15px;
 
         }
 
         .two {
-            flex-flow: row wrap;
             padding: 20px;
             gap: 10px;
-            border: 1px solid red;
         }
+
 
         #testimonials {
             flex-flow: row wrap;
             padding: 25px;
+            width: 100%;
             gap: 25px;
-            border: 1px solid red;
+            margin-top: 20px;
+            background-color: #d17786;
         }
 
         .testi {
@@ -102,14 +106,50 @@
             gap: 20px;
 
         }
+
+        .image {
+            border-radius: 50%;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .social-icons a {
+            font-size: 40px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            color: black;
+            padding: 50px;
+            background-color: #d17786;
+            opacity: 80%;
+            margin-top: 65px;
+            width: 100%;
+        }
     </style>
+</head>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <img src="placeholder.co/" width="60px" height="50px">
+                <img src="Assets/images/well.png" width="80px" height="70px">
+                <h2>Healthy Path</h2>
             </div>
             <nav>
                 <a href="#">Home</a>
@@ -120,50 +160,66 @@
     </header>
 
     <div id="heading">
+        <div class="items1">
+            <p class="head">Start Your Journey to a Healthier You with Healthy Path</p>
+            <p>At Healthy Path, we believe that small steps lead to big changes.
+                Whether you're aiming to get fit, eat better, manage stress, or simply improve your well-being, our
+                comprehensive health tracker is here to guide you every step of the way.</p>
+
+            <div class="items">
+                <input class="btn" type="submit" value="Get Started">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="two">
+        <div class="items"><img src="Assets/images/food.jfif" height="350px" width="307px"></div>
         <div class="items">
-            <h1>HEADING ONE</h1>
+            <h1>Nourish Your Body with Smart Nutrition</h1>
         </div>
         <div class="items">
-            <input type="submit" value="CTA">
+            <p>What you eat plays a huge role in how you feel and perform. With Healthy Path, you can take
+                control of
+                your nutrition and make healthier choices every day.</p>
+            <div class="items">
+                <input class="btn" type="submit" value="Read More">
+            </div>
         </div>
     </div>
 
     <div class="two">
-        <div class="items"><img src="placeholder.co" height="350px" width="307px"></div>
+        <div class="items"><img src="Assets/images/garl.png" height="350px" width="307px"></div>
         <div class="items">
-            <h1>HEADING TWO</h1>
+            <h1>Manage Stress, Find Peace</h1>
         </div>
         <div class="items">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo quaerat, ullam
-                temporibus expedita.
-                Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa quia
-                illo.</p>
+            <p>Stress is an inevitable part of life, but managing it is key to maintaining a healthy mind and
+                body.
+                Healthy Path provides you with the tools and support you need to reduce stress and improve your
+                mental
+                well-being.</p>
+
+            <div class="items">
+                <input class="btn" type="submit" value="Read More">
+            </div>
         </div>
     </div>
 
-    <div class="two">
-        <div class="items"><img src="placeholder.co" height="350px" width="307px"></div>
-        <div class="items">
-            <h1>HEADING THREE</h1>
-        </div>
-        <div class="items">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo quaerat, ullam
-                temporibus expedita.
-                Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa quia
-                illo.</p>
-        </div>
-    </div>
 
     <div class="two">
-        <div class="items"><img src="placeholder.co" height="350px" width="307px"></div>
+        <div class="items"><img src="Assets/images/sleep.png" height="350px" width="307px"></div>
         <div class="items">
-            <h1>HEADING FOUR</h1>
+            <h1>Unlock the Power of Quality Sleep</h1>
         </div>
         <div class="items">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo quaerat, ullam
-                temporibus expedita.
-                Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa quia
-                illo.</p>
+            <p>Good sleep is essential for both physical and mental well-being. With Healthy Path, you can track
+                your
+                sleep patterns and make informed decisions to improve the quality of your rest.</p>
+
+            <div class="items">
+                <input class="btn" type="submit" value="Read More">
+            </div>
         </div>
     </div>
 
@@ -172,52 +228,48 @@
             <h1>TESTIMONIALS</h1>
         </div>
         <div class="testi">
-            <div><img src="placeholder.co" height="40px" width="40px">
+            <div><img class="image" src="Assets/images/sarah.jfif" height="100px" width="100px">
                 <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo
-                        quaerat, ullam
-                        temporibus expedita.
-                        Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa
-                        quia
-                        illo.</p>
+                    <p>"Healthy Path helped me manage my stress with simple, effective mindfulness exercises. I
+                        finally feel in control!"</p>
+                    <h5>Sarah J.</h5>
                 </div>
             </div>
-            <div><img src="placeholder.co" height="40px" width="40px">
+            <div><img class="image" src="Assets/images/james.jfif" height="100px" width="100px">
                 <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo
-                        quaerat, ullam
-                        temporibus expedita.
-                        Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa
-                        quia
-                        illo.</p>
+                    <p>"With Healthy Path, tracking my fitness and meals has never been easier. I feel more
+                        energized and healthier!"</p>
+                    <h5>James R.</h5>
                 </div>
             </div>
-            <div><img src="placeholder.co" height="40px" width="40px">
+            <div><img class="image" src="Assets/images/images (1).jfif" height="100px" width="100px">
                 <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident doloremque illo
-                        quaerat, ullam
-                        temporibus expedita.
-                        Dignissimos, rerum, minima esse qui maxime ullam harum necessitatibus facilis temporibus, culpa
-                        quia
-                        illo.</p>
+                    <p>"Tracking my sleep with Healthy Path has made a huge difference. I wake up feeling more
+                        rested and refreshed!"</p>
+                    <h5>Lily M.</h5>
                 </div>
-            </div>
-
-        </div>
-
-        <div id="heading">
-            <div class="items">
-                <h1>SUBHEADING</h1>
-            </div>
-            <div class="items">
-                <input type="submit" value="CTA">
             </div>
         </div>
+    </div>
 
+    <div class="items2">
+        <div class="items">
+            <h1>Stay Connected with Us</h1>
+            <p>Follow Healthy Path on social media for daily tips, inspiration, and updates. Join our community and
+                be part of the wellness journey!</p>
+        </div>
+    </div>
 
-
+    <div class="testi">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+        </div>
+    </div>
 
 
 </body>
+<footer>© 2025 MyWebsite. All Rights Reserved</footer>
 
 </html>
