@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @media screen and (max-width: 375px) {
+        .menu-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            height: 50px;
+        }
+
+        nav{
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            background-color: black;
+            opacity: 80%;
+            width: 100px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            text-align: center;
+        }
+
+        .menu-toggle {
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        nav.active {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="menu-container">
+        <div class="logo"> <img src="placehold.co/" height="50px" width="50px">
+            <span class="logo-name">My Website</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        });
+    </script>
+    </nav>
+
+    <div class="banner">
+        <h1>My Website</h1>
+        <p>
+        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio alias voluptatem magni suscipit
+            sint quaerat voluptate omnis commodi maiores enim, impedit cumque, culpa ab, accusamus est deserunt!
+            Eligendi, rerum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio alias voluptatem magni
+            suscipit
+            sint quaerat voluptate omnis commodi maiores enim, impedit cumque, culpa ab, accusamus est deserunt!
+            Eligendi, rerum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio alias voluptatem magni
+            suscipit
+            sint quaerat voluptate omnis commodi maiores enim, impedit cumque, culpa ab, accusamus est deserunt!
+            Eligendi, rerum!</h4>
+        </p>
+    </div>
+
+
+    <section>
+        <div class="right">
+            <h1>One</h1>
+            <p>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio alias voluptatem magni
+                suscipit
+                sint quaerat voluptate omnis commodi maiores enim, impedit cumque, culpa ab, accusamus est deserunt!
+                Eligendi, rerum!
+            </h4>
+            </p>
+        </div>
+        <div class="left"><img src="placehold.co/" height="100ppx" width="100px"></div>
+    </section>
+
+    <section>
+        <div class="right">
+            <img src="placehold.co/" height="100ppx" width="100px">
+        </div>
+        <div class="left">
+            <h1>One</h1>
+            <p>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio alias voluptatem magni
+                suscipit
+                sint quaerat voluptate omnis commodi maiores enim, impedit cumque, culpa ab, accusamus est deserunt!
+                Eligendi, rerum!</h4>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="right">
+            <h1>One</h1>
+            <p>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque odio alias voluptatem magni
+                suscipit
+                sint quaerat voluptate omnis commodi maiores enim, impedit cumque, culpa ab, accusamus est deserunt!
+                Eligendi, rerum!</h4>
+            </p>
+        </div>
+        <div class="left"><img src="placehold.co/" height="100ppx" width="100px"></div>
+    </section>
+
+    <div id="testimonials">
+        <div class="items">
+            <h1>TESTIMONIALS</h1>
+        </div>
+        <div class="testi">
+            <div><img class="image" src="placehold.co/" height="50px" width="50px">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed exercitationem maxime laboriosam ab
+                        ea eos tempora eveniet natus iure? Repellat autem reiciendis nesciunt corrupti, est vitae harum
+                        repellendus ullam minus</p>
+                </div>
+            </div>
+
+            <div><img class="image" src="placehold.co/" height="50px" width="50px">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed exercitationem maxime laboriosam ab
+                        ea eos tempora eveniet natus iure? Repellat autem reiciendis nesciunt corrupti, est vitae harum
+                        repellendus ullam minus</p>
+                </div>
+            </div>
+
+            <div><img class="image" src="placehold.co/" height="50px" width="50px">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed exercitationem maxime laboriosam ab
+                        ea eos tempora eveniet natus iure? Repellat autem reiciendis nesciunt corrupti, est vitae harum
+                        repellendus ullam minus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <div class="items">
+            <h1>Contacts</h1>
+        </div>
+
+        <div class="contacts">
+            <img class="image" src="placehold.co/" height="50px" width="50px">
+            <img class="image" src="placehold.co/" height="50px" width="50px">
+            <img class="image" src="placehold.co/" height="50px" width="50px">
+        </div>
+</body>
+<footer>© 2025 MyWebsite. All Rights Reserved</footer>
+
+</html>
