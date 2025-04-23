@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        border-radius: 20px;
+        padding: 20px 50px;
+        background-color: rgb(170, 212, 248);
+        height: 650px;
+        width: 350px;
+        margin: 50px;
+       
+        
+      position: fixed;
+        
+    }
+
+    label {
+        justify-content: center;
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    input {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[ type="date"],
+    input[ type="gender"] {
+        height: 30px;
+        width: 300px;
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <section class="form">
+        <h1>Registration Form</h1>
+
+        <div class="name">
+            <label for=""></label>
+            <input type="text" value="Firstname">
+            <label for=""></label>
+            <input type="text">
+        </div>
+
+
+
+        <div class="gender">
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male
+        </div>
+
+        <label for=""></label>
+        <input type="date" value="Birthdate">
+
+
+        <label for=""></label>
+        <input type="text" value="Contact">
+
+        <label for=""></label>
+        <input type="email" value="Email">
+
+        <label for=""></label>
+        <input type="email" value="Username">
+
+        <label for=""></label>
+        <input type="password" value="Password">
+    </section>
+
+</body>
+
+</html>
